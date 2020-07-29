@@ -1,3 +1,0 @@
-[submodule "feature-flag-toolkit"]
-	path = feature-flag-toolkit
-	url = https://github.com/excellaco/feature-flag-toolkit
