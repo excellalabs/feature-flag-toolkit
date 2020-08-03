@@ -1,1 +1,5 @@
 **.DS_Store
+
+java/.gradle/
+java/.idea/
+java/build/

@@ -1,5 +1,6 @@
 package com.excella.featureflagdemo;
 
+import com.excella.featureflagdemo.domain.Flag;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,9 +20,10 @@ public class FlagController {
   public Mono<String> obtainAllFlags(Model model) {
     return webClient
         .get().uri("/flags").exchange()
-        .flatMap(resp -> resp.bodyToMono(String.class))
-        .map(json -> model.addAttribute("flags", json))
-        .map(ignore -> "allFlags");
+        .flatMapMany(resp -> resp.bodyToFlux(Flag.class))
+        .collectList()
+        .map(list -> model.addAttribute("flags", list))
+        .thenReturn("allFlags");
   }
 
 }
