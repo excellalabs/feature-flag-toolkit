@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b7051ba-7adf-421f-a9df-87d5de3ea6e8" name="Default Changelist" comment="" />
+    <list default="true" id="0b7051ba-7adf-421f-a9df-87d5de3ea6e8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ruby/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,8 +25,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ruby" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ruby/app/services/flagr" />
+      <recent name="$PROJECT_DIR$/ruby/app/services/flagrhelper" />
+      <recent name="$PROJECT_DIR$/ruby/app/services/health" />
+      <recent name="$PROJECT_DIR$/ruby/app/services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ruby" />
+    </key>
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
@@ -40,7 +54,8 @@
       <workItem from="1596047743892" duration="3954000" />
       <workItem from="1596134708091" duration="15000" />
       <workItem from="1596330323475" duration="96000" />
-      <workItem from="1596330439815" duration="631000" />
+      <workItem from="1596330439815" duration="1542000" />
+      <workItem from="1596331999366" duration="39188000" />
     </task>
     <servers />
   </component>
@@ -48,9 +63,41 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="382" y="148" width="670" height="676" key="search.everywhere.popup" timestamp="1596331061516">
-      <screen x="0" y="23" width="1440" height="801" />
+    <state x="426" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596482598691">
+      <screen x="0" y="23" width="1440" height="798" />
     </state>
-    <state x="382" y="148" width="670" height="676" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1596331061516" />
+    <state x="426" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.798@0.23.1440.798" timestamp="1596482598691" />
+    <state x="426" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.801@0.23.1440.801" timestamp="1596473298060" />
+    <state x="218" y="78" key="SettingsEditor" timestamp="1596560930825">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="218" y="78" key="SettingsEditor/0.23.1440.801@0.23.1440.801" timestamp="1596555766582" />
+    <state x="218" y="78" key="SettingsEditor/0.23.1440.804@0.23.1440.804" timestamp="1596560930825" />
+    <state x="418" y="195" width="598" height="492" key="find.popup" timestamp="1596565943086">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="418" y="193" width="598" height="490" key="find.popup/0.23.1440.798@0.23.1440.798" timestamp="1596487709625" />
+    <state x="418" y="194" width="598" height="490" key="find.popup/0.23.1440.801@0.23.1440.801" timestamp="1596548716826" />
+    <state x="418" y="195" width="598" height="492" key="find.popup/0.23.1440.804@0.23.1440.804" timestamp="1596565943086" />
+    <state x="382" y="148" width="670" height="679" key="search.everywhere.popup" timestamp="1596569867334">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="382" y="148" width="670" height="674" key="search.everywhere.popup/0.23.1440.798@0.23.1440.798" timestamp="1596500100095" />
+    <state x="382" y="148" width="670" height="676" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1596554351750" />
+    <state x="382" y="148" width="670" height="679" key="search.everywhere.popup/0.23.1440.804@0.23.1440.804" timestamp="1596569867334" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/ruby/rbflagr/lib/rbflagr.rb</url>
+          <line>54</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
