@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0b7051ba-7adf-421f-a9df-87d5de3ea6e8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/docker-compose.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ruby" />
+  </component>
+  <component name="ProjectId" id="1fN9ZxVKSAbHxlTyh1C2SHrInQt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ruby" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ruby/app/services/flagr" />
+      <recent name="$PROJECT_DIR$/ruby/app/services/flagrhelper" />
+      <recent name="$PROJECT_DIR$/ruby/app/services/health" />
+      <recent name="$PROJECT_DIR$/ruby/app/services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ruby" />
+    </key>
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b7051ba-7adf-421f-a9df-87d5de3ea6e8" name="Default Changelist" comment="" />
+      <created>1596047742729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596047742729</updated>
+      <workItem from="1596047743892" duration="3954000" />
+      <workItem from="1596134708091" duration="15000" />
+      <workItem from="1596330323475" duration="96000" />
+      <workItem from="1596330439815" duration="1542000" />
+      <workItem from="1596331999366" duration="39473000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="426" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596482598691">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="426" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.798@0.23.1440.798" timestamp="1596482598691" />
+    <state x="426" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.801@0.23.1440.801" timestamp="1596473298060" />
+    <state x="218" y="78" key="SettingsEditor" timestamp="1596560930825">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="218" y="78" key="SettingsEditor/0.23.1440.801@0.23.1440.801" timestamp="1596555766582" />
+    <state x="218" y="78" key="SettingsEditor/0.23.1440.804@0.23.1440.804" timestamp="1596560930825" />
+    <state x="418" y="195" width="598" height="492" key="find.popup" timestamp="1596565943086">
+      <screen x="0" y="23" width="1440" height="804" />
+    </state>
+    <state x="418" y="193" width="598" height="490" key="find.popup/0.23.1440.798@0.23.1440.798" timestamp="1596487709625" />
+    <state x="418" y="194" width="598" height="490" key="find.popup/0.23.1440.801@0.23.1440.801" timestamp="1596548716826" />
+    <state x="418" y="195" width="598" height="492" key="find.popup/0.23.1440.804@0.23.1440.804" timestamp="1596565943086" />
+    <state x="382" y="148" width="670" height="674" key="search.everywhere.popup" timestamp="1596571973559">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state x="382" y="148" width="670" height="674" key="search.everywhere.popup/0.23.1440.798@0.23.1440.798" timestamp="1596571973559" />
+    <state x="382" y="148" width="670" height="676" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1596554351750" />
+    <state x="382" y="148" width="670" height="679" key="search.everywhere.popup/0.23.1440.804@0.23.1440.804" timestamp="1596569867334" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/ruby/rbflagr/lib/rbflagr.rb</url>
+          <line>54</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
