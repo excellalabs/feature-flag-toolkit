@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using FeatureFlags.Models;
+using FeatureFlags.Services;
 
 namespace FeatureFlags.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+
+        private FeatureFlagModelsService featureFlagModelsService = new FeatureFlagModelsService();
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -26,6 +29,12 @@ namespace FeatureFlags.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public IActionResult FeatureFlags()
+        {
+            var flags = featureFlagModelsService.GetFlags().Result;
+            return View(flags);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
