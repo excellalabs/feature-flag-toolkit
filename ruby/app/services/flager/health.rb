@@ -7,13 +7,8 @@ module Flager
       response
     end
 
-    def self.find
-      response = Request.get(id)
-      Health.new(response)
-    end
-
     def initialize(args = {})
-      # super(args)
+      super(args)
     end
   end
 end

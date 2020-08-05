@@ -4,4 +4,9 @@ class FlagrController < ApplicationController
     @health = Flager::Health.show()
     render :json => @health
   end
+
+  def find_flags
+    @flags = Flager::Flags.find()
+    render :json => @flags
+  end
 end
