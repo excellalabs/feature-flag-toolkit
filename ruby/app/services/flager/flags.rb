@@ -1,9 +1,12 @@
 module Flager
   class Flags < Base
-    attr_accessor
-
-    def self.find
+    def self.find_all
       response = Request.get("flags")
+      response
+    end
+
+    def self.find_flag(id)
+      response = Request.get("flags/#{id}")
       response
     end
 

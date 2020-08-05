@@ -1,12 +1,22 @@
 class FlagrController < ApplicationController
   skip_before_action :verify_authenticity_token
   def health
-    @health = Flager::Health.show()
-    render :json => @health
+    result = Flager::Health.show()
+    render :json => result
   end
 
   def find_flags
-    @flags = Flager::Flags.find()
-    render :json => @flags
+    result = Flager::Flags.find_all()
+    render :json => result
+  end
+
+  def find_flag
+    result = Flager::Flags.find_flag(params[:flag_id])
+    render :json => result
+  end
+
+  private
+  def flag_params
+    params.permit(:flag_id)
   end
 end
