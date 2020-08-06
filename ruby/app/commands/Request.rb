@@ -23,8 +23,19 @@ class Request
       [JSON.parse(response.body), response.status]
     end
 
+    def post(params)
+      body = params_to_json(params)
+      api.post("flags", body)
+    end
+
     def api
       Connection.api
+    end
+
+    private
+    def params_to_json(params)
+      body = {description: params[:description], key: params[:key], template: params[:template]}.to_json
+      body
     end
   end
 end

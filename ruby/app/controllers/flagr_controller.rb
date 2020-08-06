@@ -15,8 +15,14 @@ class FlagrController < ApplicationController
     render :json => result
   end
 
+  def create_flag
+    result = Flager::Flags.create_flag(flag_params)
+    render :json => result
+  end
+
   private
+
   def flag_params
-    params.permit(:flag_id)
+    params.permit(:description, :key, :template)
   end
 end

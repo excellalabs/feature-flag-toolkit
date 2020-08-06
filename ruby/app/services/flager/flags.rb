@@ -1,5 +1,9 @@
 module Flager
   class Flags < Base
+    def initialize(args = {})
+      super(args)
+    end
+
     def self.find_all
       response = Request.get("flags")
       response
@@ -10,8 +14,9 @@ module Flager
       response
     end
 
-    def initialize(args = {})
-      super(args)
+    def self.create_flag(params)
+      response = Request.post(params)
+      response
     end
   end
 end
