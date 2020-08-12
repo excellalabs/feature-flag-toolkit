@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'flagr/health'
   get 'flagr/find_flags'
   get 'flagr/find_flag/:flag_id' => 'flagr#find_flag'
