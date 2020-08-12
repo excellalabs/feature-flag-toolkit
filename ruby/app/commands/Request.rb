@@ -23,8 +23,36 @@ class Request
       [JSON.parse(response.body), response.status]
     end
 
+    def post(params)
+      body = params_to_json(params)
+      api.post("flags", body)
+    end
+
+    def put(params)
+      #args root_path, query = {}
+      # byebug
+      # query_string = query.map{|k,v| "#{k}=#{v}"}.join("&")
+      # path = query.empty?? root_path : "#{root_path}?#{query_string}"
+      # api.put(path)
+      body = params_to_json(params)
+      api.post("flags", body)
+    end
+
     def api
       Connection.api
+    end
+
+    private
+    def params_to_json(params)
+      body = {
+        description: params[:description],
+        key: params[:key],
+        template: params[:template],
+        flag_id: params[:flag_id],
+        enabled: params[:enabled]
+      }.to_json
+
+      body
     end
   end
 end
