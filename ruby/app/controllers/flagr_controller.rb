@@ -20,9 +20,14 @@ class FlagrController < ApplicationController
     render :json => result
   end
 
+  def set_flag_enabled
+    result = Flager::Flags.set_flag_enabled(flag_params)
+    render :json => result
+  end
+
   private
 
   def flag_params
-    params.permit(:description, :key, :template)
+    params.permit(:description, :key, :template, :flag_id, :enabled)
   end
 end

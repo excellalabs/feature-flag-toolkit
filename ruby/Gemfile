@@ -71,3 +71,4 @@ gem 'rbflagr', '~> 1.1.10'
 gem 'faraday'
 
 gem 'bootstrap', '~> 4.0'
+gem 'devise', '~> 4.2'
