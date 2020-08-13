@@ -1,0 +1,48 @@
+{% extends "home.html" %}
+
+{% block body %}
+  <div class="ui middle aligned center aligned grid">
+    <div class="ui middle aligned center aligned grid">
+      <div class="column">
+        <h2 class="ui header">
+          <div class="content">
+            Log-in to one of the provided accounts
+          </div>
+        </h2>
+        <form class="ui large form error" method=post>
+          <div class="ui stacked segment">
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="user icon"></i>
+                <input type="text" name="username" placeholder="Username">
+                {% if form.username.errors %}
+                  <ul class=errors>
+                  {% for error in form.username.errors %}
+                    <li>{{ error }}</li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left icon input">
+                <i class="lock icon"></i>
+                <input type="password" name="password" placeholder="Password">
+                {% if form.password.errors %}
+                  <ul class=errors>
+                  {% for error in form.password.errors %}
+                    <li>{{ error }}</li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+              </div>
+            </div>
+            <div class="ui fluid submit button" type="submit">
+              <input type="submit" value="Login">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

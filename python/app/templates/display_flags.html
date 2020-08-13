@@ -1,0 +1,29 @@
+{% extends "home.html" %}
+
+{% block body %}
+  <h1><u>All Flags</u></h1>
+  <table class="ui celled table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Description</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for flag in all_flags %}
+        <tr>
+          <td data-label="Id">{{ flag.id }}</td>
+          <td data-label="Description">{{ flag.description }}</td>
+          <td data-label="Status">
+            {% if flag.enabled %}
+              <span style="color: green">Enabled</span>
+            {% else %}
+              <span style="color: red">Disabled</span>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

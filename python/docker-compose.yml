@@ -1,0 +1,40 @@
+version: '3.7'
+services:
+  web: 
+    build: .
+    container_name: flask-frontend 
+    ports: 
+      - "5000:5000"
+    networks: 
+      - default
+    depends_on: 
+      - flagr
+      - db
+    volumes:
+      - ./app:/usr/src/app/app
+      - ./migrations:/usr/src/app/migrations
+    restart: always
+  flagr: 
+    image: checkr/flagr
+    expose: 
+      - "18000"
+    networks:
+      - default
+    ports:
+      - "18000:18000"
+  db:
+    environment:
+      POSTGRES_USER: db-admin
+      POSTGRES_PASSWORD: featureflags12#
+      POSTGRES_DB: featureflags
+    image: postgres:latest
+    networks: 
+      - default
+    ports:
+      - "5405:5432"
+    restart: always
+    volumes:
+      - postgres_database:/var/lib/postgresql/data:Z
+volumes:
+  postgres_database:
+    external: true
