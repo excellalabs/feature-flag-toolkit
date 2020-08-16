@@ -10,7 +10,5 @@ namespace FeatureFlags.Models
         public int Id { get; set; }
 
         public string Key { get; set; }
-
-        public object Attachment { get; set; }
     }
 }
