@@ -29,6 +29,20 @@ namespace FeatureFlags.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "FeatureFlagUsers",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    FirstName = table.Column<string>(nullable: true),
+                    LastName = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FeatureFlagUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Segments",
                 columns: table => new
                 {
@@ -137,6 +151,9 @@ namespace FeatureFlags.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Constraint");
+
+            migrationBuilder.DropTable(
+                name: "FeatureFlagUsers");
 
             migrationBuilder.DropTable(
                 name: "Tags");

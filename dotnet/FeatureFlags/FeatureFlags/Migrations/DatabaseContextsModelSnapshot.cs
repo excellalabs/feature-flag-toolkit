@@ -3,16 +3,14 @@ using System;
 using FeatureFlags.Models.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FeatureFlags.Migrations
 {
     [DbContext(typeof(DatabaseContexts))]
-    [Migration("20200816193327_InitialCreate")]
-    partial class InitialCreate
+    partial class DatabaseContextsModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79,6 +77,23 @@ namespace FeatureFlags.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("FeatureFlags");
+                });
+
+            modelBuilder.Entity("FeatureFlags.Models.FeatureFlagUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FeatureFlagUsers");
                 });
 
             modelBuilder.Entity("FeatureFlags.Models.Segment", b =>

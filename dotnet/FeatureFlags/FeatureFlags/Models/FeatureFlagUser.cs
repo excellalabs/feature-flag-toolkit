@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace FeatureFlags.Models
 {
-    public class User
+    public class FeatureFlagUser
     {
         public int Id { get; set; }
 

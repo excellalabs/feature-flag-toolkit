@@ -3,14 +3,16 @@ using System;
 using FeatureFlags.Models.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FeatureFlags.Migrations
 {
     [DbContext(typeof(DatabaseContexts))]
-    partial class FeatureFlagContextModelSnapshot : ModelSnapshot
+    [Migration("20200816213301_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79,6 +81,23 @@ namespace FeatureFlags.Migrations
                     b.ToTable("FeatureFlags");
                 });
 
+            modelBuilder.Entity("FeatureFlags.Models.FeatureFlagUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FeatureFlagUsers");
+                });
+
             modelBuilder.Entity("FeatureFlags.Models.Segment", b =>
                 {
                     b.Property<int>("Id")
@@ -121,23 +140,6 @@ namespace FeatureFlags.Migrations
                     b.HasIndex("FeatureFlagId");
 
                     b.ToTable("Tags");
-                });
-
-            modelBuilder.Entity("FeatureFlags.Models.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("FeatureFlags.Models.Variant", b =>
