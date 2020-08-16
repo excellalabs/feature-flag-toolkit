@@ -2,7 +2,7 @@ version: '3.7'
 services:
   web: 
     build: .
-    container_name: flask-frontend 
+    container_name: flask-frontend
     ports: 
       - "5000:5000"
     networks: 
@@ -10,6 +10,9 @@ services:
     depends_on: 
       - flagr
       - db
+    environment:
+      STAGE: test
+      SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://test:test@db/test
     volumes:
       - ./app:/usr/src/app/app
       - ./migrations:/usr/src/app/migrations
@@ -26,6 +29,8 @@ services:
     environment:
       POSTGRES_USER: db-admin
       POSTGRES_PASSWORD: featureflags12#
+      POSTGRES_HOST: localhost
+      POSTGRES_PORT: 5432
       POSTGRES_DB: featureflags
     image: postgres:latest
     networks: 
@@ -37,4 +42,3 @@ services:
       - postgres_database:/var/lib/postgresql/data:Z
 volumes:
   postgres_database:
-    external: true

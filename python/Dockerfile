@@ -4,17 +4,19 @@ RUN apt-get update -y && \
     apt-get install -y python3-pip python3-dev && \
     apt-get install -y git
 
-COPY ./requirements.txt /app/requirements.txt
+COPY ./requirements.txt usr/src/app/requirements.txt
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
 RUN pip3 install -r requirements.txt && \
     pip3 install git+https://github.com/checkr/pyflagr.git
 
-COPY . /app
+COPY . .
 
-EXPOSE 5001
+EXPOSE 5000
 
-ENTRYPOINT [ "python3" ]
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
 
-CMD [ "run.py" ]
+ENV FLASK_APP=app.py
+CMD flask db upgrade && flask run -h 0.0.0.0 -p 5000
