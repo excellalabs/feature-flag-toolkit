@@ -1,26 +1,19 @@
-from __future__ import print_function
 from app import app
 import time
 import flagr
 from flagr.rest import ApiException
-from flask import render_template, request, flash
-from app.forms import LoginForm
-from app.models import User
-from app.models import db
-
-
-loggedInUser = ""
+from flask import render_template, request, flash, redirect, url_for
+from app.forms import LoginForm, CreateUserForm
+from app.models import User, db
 
 
 @app.route('/', methods=['GET', 'POST'])
 def login():
     form = LoginForm(request.form)
     if request.method == 'POST' and form.validate():
-        user = User.query.first()
+        user = User.query.filter(User.username == form.username.data).first()
         if (user.password == form.password.data):
-            print(user.password)
-            print(form.password.data)
-            return render_template('home.html')
+            return redirect(url_for(display_all_flags))
     return render_template('login.html', form=form)
 
 @app.route('/flags')
@@ -38,10 +31,12 @@ def display_all_flags():
 
 @app.route('/new-user', methods=['GET', 'POST'])
 def create_user():
-    if request.method == 'GET':
+    form = CreateUserForm(request.form)
+    if request.method == 'POST' and form.validate():
         data = request.get_json()
-        new_account = User(username="Devin", password="123")
+        new_account = User(username=form.username.data, password=form.password.data, role=form.role.data)
         db.session.add(new_account)
         db.session.commit()
-    return "Success!"
+        return redirect(url_for('display_all_flags'))
+    return render_template('create_user.html', form=form)
 
