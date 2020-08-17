@@ -25,9 +25,18 @@ class FlagrController < ApplicationController
     render :json => result
   end
 
+  def create_segment
+    result = Flager::Segment.create_segment(segment_params)
+    render :json => result
+  end
+
   private
 
   def flag_params
     params.permit(:description, :key, :template, :flag_id, :enabled)
+  end
+
+  def segment_params
+    params.permit(:description, :rollout_percent)
   end
 end

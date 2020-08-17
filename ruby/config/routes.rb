@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'flagr/find_flag/:flag_id' => 'flagr#find_flag'
   post 'flagr/create_flag' => 'flagr#create_flag'
   put 'flagr/:flag_id/enabled' => 'flagr#set_flag_enabled'
+  post 'flagr/:flag_id/create_segment' => 'flagr#create_segment'
 
   root 'flagr#index'
   resources :todos do

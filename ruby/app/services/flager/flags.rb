@@ -19,10 +19,11 @@ module Flager
       response
     end
 
-    def self.set_flag_enabled(params)
-      # response = Request.put("flags/#{params[:flag_id]}/enabled")
-      response = Request.put(params)
-      response
-    end
+      ##TODO
+    # def self.set_flag_enabled(params)
+    #   # response = Request.put("flags/#{params[:flag_id]}/enabled")
+    #   response = Request.put(params)
+    #   response
+    # end
   end
 end
