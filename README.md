@@ -19,3 +19,21 @@ In this repository you will find examples of how to integrate with Flagr in the 
 * [.NET](https://github.com/excellaco/feature-flag-toolkit/blob/master/dotnet/README.md)
 * [Python](https://github.com/excellaco/feature-flag-toolkit/blob/master/python/README.md)
 * [Ruby](https://github.com/excellaco/feature-flag-toolkit/blob/master/ruby/README.md)
+
+## Best Practices
+
+### Targeted Rollouts
+
+> Info on how to target rollouts to specific groups of users
+
+### Testing
+
+>Recommendations for testing go here
+
+### Managing Tech Debt
+
+> Info on how to remove flags after the fact
+
+### Security and Change Management
+
+> Info on how to work with client concerns
