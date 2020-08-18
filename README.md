@@ -24,7 +24,9 @@ In this repository you will find examples of how to integrate with Flagr in the 
 
 ### Targeted Rollouts
 
-> Info on how to target rollouts to specific groups of users
+A pattern that has been successful with our clients is a _targeted user rollout_ of features. Instead of feature being all-or-nothing, it could be enabled for a specific subset of users and not others.
+
+For example, imagine an internal application for an organization that is used in multiple departments. In order to manage training and expectations, it would be helpful to deploy new features only to users that have received training on them. We can add configuration for this into Flagr to avoid cluttering up our application code with logic around specific departments that will change over time. For a more detailed example, see here (TODO: Link)
 
 ### Testing
 
