@@ -11,11 +11,12 @@ module Flager
 
     def self.find_flag(id)
       response = Request.get("flags/#{id}")
+      byebug
       response
     end
 
     def self.create_flag(params)
-      response = Request.post(params)
+      response = Request.post(Base.flag_uri, params)
       response
     end
 
