@@ -4,7 +4,7 @@
 
 ## Overview
 
-Excella is committed to **Continuous and Progressive Development** of software for our clients. One of the key components of Progressive Delivery is _Feature Flags_ (also known as _Feature Toggles_), the ability to dynamically enable and disable functionality of an application. This toolkit provides examples for developers on how to implement this pattern.
+[Excella](https://www.excella.com/) is committed to **Continuous and Progressive Development** of software for our clients. One of the key components of Progressive Delivery is _Feature Flags_ (also known as _Feature Toggles_), the ability to dynamically enable and disable functionality of an application. This toolkit provides examples for developers on how to implement this pattern.
 
 For a more thorough overview of Feature Flags, refer to [FeatureFlags.io](https://featureflags.io/)
 
