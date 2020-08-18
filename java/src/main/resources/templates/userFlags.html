@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sample</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<h2>User Flags</h2>
+
+<h3>Username: </h3>
+<p th:text="${username}">Unknown</p>
+
+<h3>Role: </h3>
+<p th:text="${rolename}">Unknown</p>
+
+</body>
+</html>
