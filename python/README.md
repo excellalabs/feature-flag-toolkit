@@ -15,19 +15,19 @@ After you've completed the previous steps you can simply run ```docker-compose u
 
 To quickly understand how Flagr works you can run through this example which will walk you through creating a simple flag. The Flask application supports three different users; Admin, Authenticated, and Public. We will create a flag that shows up 100% of the time for Admins, 50% of the time for Authenticated users, and 0% of the time for Public users.
 
-## Step 1
+#### Step 1
 
 After your containers have started, navigate to localhost:18000. In the bar that says "Specific new flag description" enter in any flag name and then click create.
 
-## Step 2 
+#### Step 2 
 
 First you should enable the flag. Then you can create two variants one labeled "Off", and the other labeled "On". When you evaluate the flag it will send back one of these variants based off the context you pass in from the web application. 
 
-## Step 3
+#### Step 3
 
 Next you should create three segments, one labeled "Admin", the next labeled "Authenticated", and the last one labeled "Public".
 
-## Step 4
+#### Step 4
 
 For the first segment create a new distribution and select the "on" variant and set it to 100%. For the Authenticated segment split 50% between "On" and 50% for "off". Finally, for the Public segment set the "off" variant to 100%. 
 
@@ -39,7 +39,7 @@ At this point your flag should like similar to these pictures:
 ![Second Segment](/python/readme-images/second_segment.PNG)
 ![Third Segment](/python/readme-images/third_segment.PNG)
 
-## Create an account and view flags
+#### Create an account and view flags
 
 Navigate to localhost:5000/user/create and create an account with any username or password. Select Admin, and hit enter. You should see the flag you just created. Next create another account and assign it the Authenticated role. You should see your flag appear 50% of the time. Do the same thing for the Public role, and you should not see your flag at all.
 
