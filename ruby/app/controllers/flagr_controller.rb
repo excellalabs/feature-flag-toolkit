@@ -14,7 +14,9 @@ class FlagrController < ApplicationController
 
   def find_flag
     result = Flager::Flags.find_flag(params[:flag_id])
-    render :json => result
+    response = return_applicable_flags(result)
+
+    render :json => response
   end
 
   def create_flag
@@ -35,7 +37,7 @@ class FlagrController < ApplicationController
 
   def find_segments
     result = Flager::Segment.find_segments(params[:flag_id])
-    render :json => result
+    result
   end
 
   def create_constraint
@@ -55,5 +57,26 @@ class FlagrController < ApplicationController
 
   def constraint_params
     params.permit(:property, :operator, :value)
+  end
+
+  def return_applicable_flags(flag)
+    if current_user[:admin]
+      if segments_array(flag).select { |segment| segment["description"] === "admin" }.empty?
+        return {}
+      else
+        return flag
+      end
+
+    else
+      if segments_array(flag).select { |segment| segment["description"] === "user" }.empty?
+        return {}
+      else
+        return flag
+      end
+    end
+  end
+
+  def segments_array(flag)
+    flag["segments"]
   end
 end

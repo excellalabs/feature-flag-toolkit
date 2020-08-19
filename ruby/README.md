@@ -37,11 +37,14 @@ Flagr is a feature flagging, A/B testing and dynamic configuration microservice.
     
     
 ### Notes
+ * This is by no means a refactored, dry, optimal application. It's a proof of concept for the use of Flagr
  * Runs on an internal host of docker('http://host.docker.internal:18000/api/v1/') as the base url
     * Not the usual API of local host hitting a different local host
  * Uses devise as authentication for proof of concept
     * Here's a quick setup guide: https://riptutorial.com/devise/example/12284/installation-or-setup
- * Most of the endpoints have not been incorporated with the front-end so you're going to have to use an HTTP client   
+ * Most of the endpoints have not been incorporated with the front-end so you're going to have to use an HTTP client
+ * Session is only stored in a browser rather than an HTTP client
+    * As a result, to retrieve certain flags for a User, it has to be done through the front-end while all other endpoints can be used on the HTTP client   
     
     
 

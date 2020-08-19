@@ -11,7 +11,6 @@ module Flager
 
     def self.find_flag(id)
       response = Request.get("flags/#{id}")
-      byebug
       response
     end
 
