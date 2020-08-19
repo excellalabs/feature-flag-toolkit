@@ -1,7 +1,13 @@
 {% extends "home.html" %}
 
 {% block body %}
-  <h1><u>All Flags</u></h1>
+  {% if is_user_flags %}
+    <h1><u>User Flags</u></h1>
+    <a href="/flags">See all flags</a>
+  {% else %}
+    <h1><u>All Flags</u></h1>
+    <a href="/user/flags">See your flags</a>
+  {% endif %}
   <table class="ui celled table">
     <thead>
       <tr>

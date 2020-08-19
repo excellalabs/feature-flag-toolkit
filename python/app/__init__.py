@@ -4,10 +4,14 @@ from .models import db, User
 from flask_migrate import Migrate
 from flask_login import LoginManager
 
+
+# Initialize Flask
 app = Flask(__name__)
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 app.secret_key = 'super secret'
 app.app_context().push()
+
+# Initialize the database
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
 db.init_app(app)
 db.create_all()
 migrate = Migrate(app, db)

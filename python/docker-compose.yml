@@ -39,6 +39,6 @@ services:
       - "5405:5432"
     restart: always
     volumes:
-      - postgres_database:/var/lib/postgresql/data:Z
+      - postgres_database:/var/lib/postgresql/data
 volumes:
   postgres_database:

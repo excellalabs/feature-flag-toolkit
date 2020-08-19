@@ -14,15 +14,11 @@ def login():
     form = LoginForm(request.form)
     if request.method == 'POST' and form.validate():
         user = User.query.filter(User.username == form.username.data).first()
-        login_user(user)
-        if (user.password == form.password.data):
-            return redirect(url_for('get_users_flags'))
+        if user:
+            login_user(user)
+            if (user.password == form.password.data):
+                return redirect(url_for('get_users_flags'))
     return render_template('login.html', form=form)
-
-@app.route('/flags')
-def display_all_flags():
-    flags = get_all_flags()
-    return render_template('display_flags.html', all_flags=flags)
 
 @app.route('/user/create', methods=['GET', 'POST'])
 def create_user():
@@ -35,6 +31,11 @@ def create_user():
         login_user(new_account)
         return redirect(url_for('get_users_flags'))
     return render_template('create_user.html', form=form)
+
+@app.route('/flags')
+def display_all_flags():
+    flags = get_all_flags()
+    return render_template('display_flags.html', all_flags=flags, is_user_flags=False)
 
 @app.route('/user/flags')
 def get_users_flags():
@@ -55,6 +56,8 @@ def get_users_flags():
     #     }
     # }
     body = flagr.EvalContext()
+    if current_user.is_anonymous:
+        return redirect(url_for('login'))
     body.entity_context = { "role": current_user.role }
 
     user_flags = []
@@ -68,7 +71,7 @@ def get_users_flags():
         except ApiException as e:
             return render_template('error.html', error=e)
     
-    return render_template('display_flags.html', all_flags=user_flags)
+    return render_template('display_flags.html', all_flags=user_flags, is_user_flags=True)
 
 
 def get_all_flags():
