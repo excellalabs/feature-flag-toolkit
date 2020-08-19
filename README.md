@@ -30,7 +30,17 @@ For example, imagine an internal application for an organization that is used in
 
 ### Testing
 
->Recommendations for testing go here
+#### Unit Tests
+Unit testing with feature flags should be simple. Best practice is to make each unit of code small enough that it is not aware of or affected by any feature flags. You can see a psuedocode example of doing unit tests with feature flags on [launchdarkly](https://launchdarkly.com/blog/testing-with-feature-flags/#TestingwithFeatureFlags-UnitTesting). If you are in a situation where a unit of code must know about a feature flag, you can simply mock out the feature flag inside of the unit test.
+
+#### Integration Tests / E2E testing
+It gets more difficult to run integration and E2E tests with feature flags. Since each flag has different combinations you must test, as you add more and more feature flags you begin to experience [combinatorial explosion](https://www.freecodecamp.org/news/combinatorics-handle-with-care-ed808b48e5dd/). It is still possible to test combinations but it should only be done for situations where you know one flag would definitely affect another. Other than that, you should find a different testing strategy that still gives your team confidence without attempting to test every combination of flag states. 
+
+You can read more about other testing strategies in the blog posts below:
+
+[launchdarkly](https://launchdarkly.com/blog/testing-with-feature-flags/), 
+[optimizely #1](https://blog.optimizely.com/2019/02/11/using-feature-flags-to-test-in-production/)
+[optimizely #2](https://blog.optimizely.com/2020/06/04/best-practices-feature-flag-testing-qa/)
 
 ### Managing Tech Debt
 
