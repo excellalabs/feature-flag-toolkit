@@ -3,3 +3,5 @@
 java/.gradle/
 java/.idea/
 java/build/
+
+/.idea

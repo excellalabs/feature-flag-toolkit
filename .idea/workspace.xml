@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b7051ba-7adf-421f-a9df-87d5de3ea6e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/feature-flag-toolkit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/feature-flag-toolkit.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruby/app/views/flagr/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/app/views/flagr/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruby/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/app/controllers/flagr_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/app/controllers/flagr_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/app/services/flager/flags.rb" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/app/services/flager/flags.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,24 +72,45 @@
     </state>
     <state x="426" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.798@0.23.1440.798" timestamp="1596482598691" />
     <state x="426" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.801@0.23.1440.801" timestamp="1596473298060" />
+    <state x="117" y="159" width="1200" height="561" key="DiffContextDialog" timestamp="1597262982867">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="117" y="159" width="1200" height="561" key="DiffContextDialog/0.23.1440.797@0.23.1440.797" timestamp="1597262982867" />
+    <state x="496" y="149" key="RollbackChangesDialog" timestamp="1597260693294">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="496" y="149" key="RollbackChangesDialog/0.23.1440.797@0.23.1440.797" timestamp="1597260693294" />
     <state x="218" y="78" key="SettingsEditor" timestamp="1596560930825">
       <screen x="0" y="23" width="1440" height="804" />
     </state>
     <state x="218" y="78" key="SettingsEditor/0.23.1440.801@0.23.1440.801" timestamp="1596555766582" />
     <state x="218" y="78" key="SettingsEditor/0.23.1440.804@0.23.1440.804" timestamp="1596560930825" />
-    <state x="418" y="193" width="668" height="490" key="find.popup" timestamp="1597244190406">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state width="511" height="445" key="SwitcherDM" timestamp="1597688882967">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
+    <state width="511" height="445" key="SwitcherDM/0.23.1440.797@0.23.1440.797" timestamp="1597688882967" />
+    <state x="117" y="159" width="1200" height="561" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1597262982868">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="117" y="159" width="1200" height="561" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1440.797@0.23.1440.797" timestamp="1597262982868" />
+    <state x="505" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597260829067">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="505" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.797@0.23.1440.797" timestamp="1597260829067" />
+    <state x="418" y="193" width="668" height="490" key="find.popup" timestamp="1597781534743">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="418" y="193" width="668" height="490" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1597781534743" />
     <state x="418" y="193" width="668" height="490" key="find.popup/0.23.1440.798@0.23.1440.798" timestamp="1597244190406" />
     <state x="418" y="194" width="598" height="490" key="find.popup/0.23.1440.801@0.23.1440.801" timestamp="1596548716826" />
     <state x="418" y="195" width="598" height="492" key="find.popup/0.23.1440.804@0.23.1440.804" timestamp="1596565943086" />
-    <state x="382" y="148" width="670" height="674" key="search.everywhere.popup" timestamp="1597245009578">
+    <state x="382" y="148" width="670" height="674" key="search.everywhere.popup" timestamp="1597855357699">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="382" y="148" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1597245009578" />
+    <state x="382" y="148" width="670" height="674" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1597855357699" />
     <state x="382" y="148" width="670" height="674" key="search.everywhere.popup/0.23.1440.798@0.23.1440.798" timestamp="1597244185666" />
     <state x="382" y="148" width="670" height="676" key="search.everywhere.popup/0.23.1440.801@0.23.1440.801" timestamp="1597154689653" />
-    <state x="382" y="148" width="670" height="679" key="search.everywhere.popup/0.23.1440.804@0.23.1440.804" timestamp="1596569867334" />
+    <state x="382" y="148" width="670" height="679" key="search.everywhere.popup/0.23.1440.804@0.23.1440.804" timestamp="1597672411398" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

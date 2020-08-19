@@ -23,9 +23,9 @@ class Request
       [JSON.parse(response.body), response.status]
     end
 
-    def post(params)
+    def post(uri, params)
       body = params_to_json(params)
-      api.post("flags", body)
+      api.post(uri, body)
     end
 
     def put(params)
@@ -49,7 +49,8 @@ class Request
         key: params[:key],
         template: params[:template],
         flag_id: params[:flag_id],
-        enabled: params[:enabled]
+        enabled: params[:enabled],
+        rolloutPercent: params[:rollout_percent]
       }.to_json
 
       body
