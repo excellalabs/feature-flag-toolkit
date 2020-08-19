@@ -33,11 +33,11 @@ For the first segment create a new distribution and select the "on" variant and 
 
 At this point your flag should like similar to these pictures:
 
-![Enabled flag](/readme-images/turn_flag_on.PNG)
-![Flag variants](/readme-images/flag_variant.PNG)
-![First Segment](/readme-images/first_segment.PNG)
-![Second Segment](/readme-images/second_segment.PNG)
-![Third Segment](/readme-images/third_segment.PNG)
+![Enabled flag](/python/readme-images/turn_flag_on.PNG)
+![Flag variants](/python/readme-images/flag_variant.PNG)
+![First Segment](/python/readme-images/first_segment.PNG)
+![Second Segment](/python/readme-images/second_segment.PNG)
+![Third Segment](/python/readme-images/third_segment.PNG)
 
 ## Create an account and view flags
 
