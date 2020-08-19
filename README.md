@@ -39,7 +39,7 @@ It gets more difficult to run integration and E2E tests with feature flags. Sinc
 You can read more about other testing strategies in the blog posts below:
 
 [launchdarkly](https://launchdarkly.com/blog/testing-with-feature-flags/), 
-[optimizely #1](https://blog.optimizely.com/2019/02/11/using-feature-flags-to-test-in-production/)
+[optimizely #1](https://blog.optimizely.com/2019/02/11/using-feature-flags-to-test-in-production/),
 [optimizely #2](https://blog.optimizely.com/2020/06/04/best-practices-feature-flag-testing-qa/)
 
 ### Managing Tech Debt
