@@ -44,7 +44,12 @@ You can read more about other testing strategies in the blog posts below:
 
 ### Managing Tech Debt
 
-> Info on how to remove flags after the fact
+When integrating Feature Flags into your application, you will create a set of *Guards*, code blocks that determine access to your feature (usually in the form of an `if` statement or similar structure). It is important to remove these guards once a feature has been fully promoted, both for code cleanliness and safety. With the speed of agile development, removing these guards can be forgotten or deprioritized. Here are some tips for ensuring they are removed.
+
+* For each feature, use only a single guard if possible, two to three at most. If you find that it takes more than three guards to isolate your feature, its likely there is a design flaw in your feature implementation. 
+* Add a comment next to your guard with an easily searchable tag for the name of the feature.
+* If possible, create a branch / pull request that removes the guard at the same time that the guard is implemented. In the best case scenario, this allows the guard to be removed in a single merge. Worst case - you've provided a guide on how to remove the guard.
+* Immediately create a ticket / card in whatever agile framework you are using to represent the work of removing the guard, and make sure it stays visible in the backlog to be picked up as soon as the feature is fully promoted. 
 
 ### Security and Change Management
 
