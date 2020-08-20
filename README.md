@@ -1,3 +1,5 @@
+![ExcellaLabs Logo](/ExcellaLabsLogo.jpg)
+
 # Feature Flag Toolkit
 
 >This is an Excella Consultant Productivity Toolkit - it is intended to provide guidance and assistance to Excella's consultants. If you are a member of the Excella community, feel free to contribute!
