@@ -1,6 +1,6 @@
 # Feature Flags in Dotnet
 
-This project is intended to show how you can integrate Feature Flagging in a simple .NET application utilizing .NET MVC Razor pages and an open-source Feature Flagging library called Flagr (https://checkr.github.io/flagr/#/)
+This project is intended to show how you can apply Feature Flagging in a simple .NET application utilizing .NET MVC Razor pages and an open-source Feature Flagging library called Flagr (https://checkr.github.io/flagr/#/)
 
 ## Prerequsites
 - Docker
