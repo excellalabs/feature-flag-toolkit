@@ -3,11 +3,13 @@
 This project is intended to show how you can apply Feature Flagging in a simple .NET application utilizing .NET MVC Razor pages and an open-source Feature Flagging library called Flagr (https://checkr.github.io/flagr/#/)
 
 ## Prerequsites
+- Windows environment
 - Docker
 - .NET Core SDK (3.1.401)
 
 ## Running the Flagr API & UI
 1. Open *Windows PowerShell*
+2. Run `docker pull checkr/flagr`
 2. Run `docker run -it -p 18000:18000 checkr/flagr`
 3. Navigate to *http://localhost:18000*
 ![Flagr UI](https://github.com/excellaco/feature-flag-toolkit/blob/master/dotnet/FlagrScreenshot.PNG)
