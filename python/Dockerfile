@@ -19,4 +19,5 @@ ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
 ENV FLASK_APP=app.py
+ENV FLASK_ENV=development
 CMD flask db upgrade && flask run -h 0.0.0.0 -p 5000
