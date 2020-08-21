@@ -50,11 +50,10 @@
 3. Run `dotnet run`
 4. Navigate to `localhost:----` but replace the `-`s with the port number from the last `Now listening on: localhost:----`
 ![Feature Flag App](https://github.com/excellaco/feature-flag-toolkit/blob/master/dotnet/FeatureFlagAppScreenshot.PNG)
-https://github.com/excellaco/feature-flag-toolkit/blob/master/dotnet/FeatureFlagAppScreenshot.PNG
 
-  #### Check for your Flag
-  1. Click on `Feature Flags` in the top panel
-  2. Ensure your Flag exists in the list and is enabled
+#### Check for your Flag
+1. Click on `Feature Flags` in the top panel
+2. Ensure your Flag exists in the list and is enabled
 
   #### Create User
   1. Click on `Create User` in the top panel
