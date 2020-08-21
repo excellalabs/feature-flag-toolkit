@@ -20,14 +20,7 @@ namespace FeatureFlags
 
         public async static Task Main(string[] args)
         {
-            var flags = await GetFlags();
-            JArray j = JArray.Parse(flags);
             CreateHostBuilder(args).Build().Run();
-        }
-
-        private static async Task<string> GetFlags()
-        {
-            return await client.GetStringAsync("http://localhost:18000/api/v1/flags");
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

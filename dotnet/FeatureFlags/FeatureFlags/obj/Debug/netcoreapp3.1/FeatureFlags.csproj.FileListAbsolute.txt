@@ -284,3 +284,4 @@ C:\Users\walee\Documents\GitHub\feature-flag-toolkit\dotnet\FeatureFlags\Feature
 C:\Users\walee\Documents\GitHub\feature-flag-toolkit\dotnet\FeatureFlags\FeatureFlags\obj\Debug\netcoreapp3.1\Razor\Views\FeatureFlagUsers\Details.cshtml.g.cs
 C:\Users\walee\Documents\GitHub\feature-flag-toolkit\dotnet\FeatureFlags\FeatureFlags\obj\Debug\netcoreapp3.1\Razor\Views\FeatureFlagUsers\Edit.cshtml.g.cs
 C:\Users\walee\Documents\GitHub\feature-flag-toolkit\dotnet\FeatureFlags\FeatureFlags\obj\Debug\netcoreapp3.1\Razor\Views\FeatureFlagUsers\Index.cshtml.g.cs
+C:\Users\walee\Documents\GitHub\feature-flag-toolkit\dotnet\FeatureFlags\FeatureFlags\obj\Debug\netcoreapp3.1\Razor\Views\Home\AdminDashboard.cshtml.g.cs

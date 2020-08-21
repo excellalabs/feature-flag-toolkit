@@ -16,6 +16,8 @@ namespace FeatureFlags.Controllers
 
         private FeatureFlagModelsService featureFlagModelsService = new FeatureFlagModelsService();
 
+        private FlagrService flagrService = new FlagrService();
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -35,6 +37,13 @@ namespace FeatureFlags.Controllers
         {
             var flags = featureFlagModelsService.GetFlags().Result;
             return View(flags);
+        }
+
+        public IActionResult AdminDashboard()
+        {
+            bool shouldShowAdminContext = flagrService.ShouldDisplayAllContent().Result;
+            ViewData["shouldShowAdminContext"] = shouldShowAdminContext;
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

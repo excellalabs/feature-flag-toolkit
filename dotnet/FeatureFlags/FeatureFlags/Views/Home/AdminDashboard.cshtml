@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+@{ var shouldShowAdminContent = (bool)ViewData["shouldShowAdminContext"];}
+<div class="text-center">
+    <h1 class="display-4">Admin Dashboard</h1>
+    @if(shouldShowAdminContent )
+    {<p> This is admin content.</p>}
+    <p>This is standard content</p>
+</div>
