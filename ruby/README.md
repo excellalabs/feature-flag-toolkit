@@ -4,18 +4,17 @@ This application encompasses a bare-bones Rails App that connects to the Flagr A
 
 Processes you may want to cover before getting started:
 
-### Docker
-* This application involves two Docker containers: Internal Rails app and an External Flagr image
+###Docker
+This application involves two Docker containers: Internal Rails app and an External Flagr image
    * docker-compose.yml sets both of these images up for both localhost usage and an internal docker host
 
-### Rails App
-* Simple Rails app that creates Todo and not much else
+###Rails App
+Simple Rails API demonstrating the integration with Flagr
 
 ###Flagr
 
 Flagr is a feature flagging, A/B testing and dynamic configuration microservice. The base path for all the APIs is "/api/v1".
 * Runs on localhost:18000
-
 
 ## Setup 
  * Have docker installed and ready to go
@@ -44,7 +43,29 @@ Flagr is a feature flagging, A/B testing and dynamic configuration microservice.
     * Here's a quick setup guide: https://riptutorial.com/devise/example/12284/installation-or-setup
  * Most of the endpoints have not been incorporated with the front-end so you're going to have to use an HTTP client
  * Session is only stored in a browser rather than an HTTP client
-    * As a result, to retrieve certain flags for a User, it has to be done through the front-end while all other endpoints can be used on the HTTP client   
+    * As a result, to retrieve certain flags for a User, it has to be done through the front-end while all other endpoints can be used on the HTTP client
+    
+    
+    
+## JSON Examples
+ * create_flag
+    * {
+      "description": "string",
+      "key": "string"
+      }    
+      
+ * create_segment
+    * {
+      	"description": "string",
+      	"rollout_percent": int 
+      }     
+ 
+ * create_constraint
+    * {
+        "property": "string",
+        "operator": "string",
+        "value": "string"
+      }      
     
     
 
