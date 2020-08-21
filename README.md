@@ -55,4 +55,6 @@ When integrating Feature Flags into your application, you will create a set of *
 
 ### Security and Change Management
 
-> Info on how to work with client concerns
+By default, Flagr does not require any credentials to access. While useful for development, this is generally unacceptable in a production system. If you peruse the [Environment Variable Configuration](https://checkr.github.io/flagr/#/flagr_env) section of the Flagr documentation, you will see some options for authentication. We recommend using the JWT method as this allows for integration with existing identity platforms.
+
+Another production concern is logging and auditing. Specifically, it's important to keep track of who is modifying flags and when. Flagr has this capability built in as well - if you look at the above-linked configuration, there are options for exporting to tools like New Relic and Prometheus, as well as writing change records to a messaging tool like Apache Kafka or AWS Kinesis. When preparing for production, you should choose one of these options that matches your architecture and enable it as soon as possible.
